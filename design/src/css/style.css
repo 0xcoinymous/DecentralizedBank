@@ -1,0 +1,63 @@
+body {
+    font: 14px sans-serief, Arial, Tahoma;
+}
+
+.Alertmargin{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 4%;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.Textmargin{
+    width: 70%;
+    /* text-align: center; */
+    margin-left: 15%;
+    height: 10%;
+    font-size: 20px;
+}
+
+.btnmargin{
+    width: 50%;
+    height: 5%;
+    margin-left: 25%;
+    margin-top: 1%;
+}
+
+.Addmargin{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+.Addmargin2{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+}
+
+.btns1{
+    margin-left: 20%;
+}
+.btns2{
+    margin-right: 20%;
+}
+.cov{
+    width: 450px;
+}
+.cov2{
+    width: 740px;
+}
+
+.candiad{
+    width: 60%;
+    margin-bottom: 2%;
+   
+}
+
+

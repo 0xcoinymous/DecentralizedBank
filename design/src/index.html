@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Staking</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/style.css" rel="stylesheet">
+    <!--===============================================================================================-->
+</head>
+
+<body>
+
+    <div class="bg-container-contact100" style="background-image: url(images/bg.jpg);">      <!-- overflow: scroll; -->
+       
+        <!--=============================================== header ================================================-->
+
+        <div class="contact100-header flex-sb-m" style="justify-content: center;" >
+            <span style="color:rgb(222, 151, 151) ; font-size: 25px ; "><i><b>Designed by Abolfazl Iraninasab</b></i></span>
+        </div>
+
+        <br>
+        <!--=============================================== project tokens ================================================-->
+
+        <div class="row">
+            <div class="col-md-9 col-sm-8" >
+                <div class="alert alert-info Addmargin" role="alert">
+                    <div>Address of project tokens :</div>
+                    <hr>
+                     UTL : <span id="UTLAddress"></span><br>
+                     GVN : <span id="GVNAddress"></span>
+                 </div>
+            </div>
+
+            <div class="col-md-3 col-sm-4">
+                <button class="btn btn-danger" id="getAirdrop">
+                    Participate in Airdrop
+                </button>
+            </div>
+            
+        </div>
+
+        <!--============================================ user infor ===================================================-->
+
+        <div class="alert alert-warning Addmargin" role="alert">
+            <span>Your info:</span>
+            <hr>
+            Current Address : <span id="AddressFill"></span><br>
+            GVN balance : <span id="GVNBalance"></span><br>
+            UTL balance : <span id="UTLBalance"></span><br>
+            UTL staked : <span id="UTLStaked"></span><br>
+            reward PNL : <span id="RewardPNL"></span><br>
+
+
+        </div>
+    
+        <!--============================================= project staking info ==================================================-->
+
+        <div class="alert alert-info Addmargin" role="alert">
+            <div>staking information of project :</div>
+           <hr>
+            Total Value Locked : <span id="Locked"></span><br>
+            Reward Rate : <span id="RewardRate"></span> <span> ( by staking 10 UTL , you get <span id="RewardRatemsg"></span> GVN per minute ) </span> <br>
+
+        </div>
+
+        <!--============================================== buttons =================================================-->
+
+        <div class="flex-sb-m">
+            <button class="btn-show-contact100 btns1 " id="stake">stake => </button>
+            <input class="btn-show-contact100 " type="currency" placeholder="      Stake amount" name="" id="stakeValue">
+            <button class="btn-show-contact102 " id="buyUTL">buy token => </button>
+            <input class="btn-show-contact102 btns2"  type="currency" placeholder="     Buy amount" name="" id="buyValue">
+            <span></span>
+        </div>
+
+        <br>
+
+        <div class="flex-sb-m">
+            <button class="btn-show-contact100 btns1" id="unStake">
+                unstake UTL</button><br>
+            <button class="btn-show-contact102 " id="rewardGVN">
+                reward GVN</button><br>
+            <button class="btn-show-contact102 btns2" id="updateRewardGVN">
+                update Reward</button>
+        </div>
+
+    </div>
+    
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <!-- <script src="vendor/daterangepicker/moment.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/web3new.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
